@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Fullsail,Mobile Interface & Usability,Project 1,To Do List,mobile development, html5" />
+    <meta name="description" content="Project 2 for MiU"  />
+    <meta name="robots" content="index, no follow" />
+    <meta name ="viewport" content="user-scalable=no, width=device-width" />
+
+    <title>iWill</title>
+</head>
+
+<body>
+<form action="#" method = "post" id="searchForm">
+    
+    <fieldset id = "searchFormset">
+        <legend>Search iWill</legend>
+        <!-- <span> * fields are required. </span> -->
+        <ul id = "errors"></ul>
+        <ul id = "questions">
+            <li id = <select><label for = "group">By Assigned:
+            <select id="assignedPerson">
+            	<option value="Mom">Mom</option>
+                <option value="Dad">Dad</option>
+                <option value="Dylan">Dylan</option>
+	    </select></label><br /></li>                    
+            <li> <label for = "assigned">Search Term: </label><input type ="text" id = "search" /></li>
+        </ul>
+    </fieldset>
+    <input type = "button" value = "Search" id = "searchBtn" /><br />
+</form>
+<div id = "results"></div>
+<script src = "js/mainWithSearch.js" type = "text/javascript"></script>
+</body>
+</html>
