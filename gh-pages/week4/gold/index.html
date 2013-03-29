@@ -1,5 +1,5 @@
 <!doctype html>
-<!--Michael Usry, MiU, Project 1 0313 -->
+<!--Michael Usry, MiU, Project 4 Gold 1303 -->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -8,27 +8,28 @@
         <meta name="robots" content="index, no follow" />
         <meta name ="viewport" content="user-scalable=no, width=device-width" />
         <title>iWill</title>
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-
-        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+        <link rel = "stylesheet" href="css/themeroller.css"/>
+        <link rel = "stylesheet" href = "css/MiU_13.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
         <script src="js/libs/jquery.validate.min.js"></script>
 
     </head>
 
     <body>
         <!--MAIN PAGE START -->
-        <div data-role = "page" id ="main">
+        <div data-role = "page" id ="main" data-theme = "c">
             <div class = "cta">
                 <a href = "#add"><img src = "images/cta2.png" class = "cta" /></a>
             </div>
 
             <div data-role="container">
-                <input type="search" id="search" value="search">
+                <input type="search" id="search" placeholder="search">
             </div>
 
-            <div data-role = "fieldcontain" data-theme="a" data-content-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset = "true">
+            <div data-role = "fieldcontain" data-theme = "c" data-content-theme = "a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset = "true">
                 <h3>
                 <center>
                     Browse
@@ -50,7 +51,7 @@
                 </ul>
             </div>
 
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-theme = "c" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li>
@@ -71,41 +72,11 @@
         </div>
         <!-- *********************** END OF MAIN PAGE ***********************-->
 
-        <!-- *********************** START OF ADD PAGE ***********************-->
-
-        <!--addItem Function Where to pick up page start -->
-        <div data-role="page" id ="addItem" data-add-back-btn="true">
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
-            </div>
-            <div>
-                <h2>To Do List</h2>
-            </div>
-            <div data-role="footer" data-position="fixed">
-                <div data-role="navbar">
-                    <ul>
-                        <li>
-                            <a href="#main">Home</a>
-                        </li>
-                        <li>
-                            <a href="#add" class = "ui-btn-active">Add</a>
-                        </li>
-                        <li >
-                            <a href="#browseNewsList">List</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End of addItem Where to Pick up Function page -->
 
         <!--browseWhat Function Where to pick up page start -->
         <div data-role="page" id ="browseWhat" data-add-back-btn="true">
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
+            <div data-role="header" data-theme = "c" data-position="fixed">
+                <h5><a href = "#main">iWill<img src="images/logo3.png" align = "right"/></a></h5>
             </div>
 
             <div>
@@ -134,7 +105,7 @@
                 </ul>
             </div>
 
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-theme = "c" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li>
@@ -157,8 +128,8 @@
 
         <!--whereToShop Function Where to pick up page start -->
         <div data-role="page" id ="whereToShop" data-add-back-btn="true">
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
+            <div data-role="header" data-theme = "c" data-position="fixed">
+                <h5><a href = "#main">iWill<img src="images/logo3.png" align = "right"/></a></h5>
             </div>
 
             <div>
@@ -168,7 +139,7 @@
                 </div>
             </div>
 
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-theme = "c" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li>
@@ -190,9 +161,9 @@
         <!-- End of whereToShop  Function page -->
 
         <!--browseWhat Function Where to pick up page start -->
-        <div data-role="page" id ="browseWhat" data-add-back-btn="true">
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
+        <div data-role="page" id ="browseWhat" data-theme = "c" data-add-back-btn="true">
+            <div data-role="header" data-theme = "c" data-position="fixed">
+                <h5><a href = "#main">iWill<img src="images/logo3.png" align = "right"/></a></h5>
             </div>
 
             <div>
@@ -222,7 +193,7 @@
                 </ul>
             </div>
 
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-theme = "c" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li>
@@ -243,9 +214,9 @@
         </div>
         <!-- End of Browse What to Pick up Function page -->
         <!--browseWho Function Where to pick up page start -->
-        <div data-role="page" id ="browseWho" data-add-back-btn="true">
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
+        <div data-role="page" id ="browseWho" data-theme = "c" data-add-back-btn="true">
+            <div data-role="header" data-theme = "c" data-position="fixed">
+                <h5><a href = "#main">iWill<img src="images/logo3.png" align = "right"/></a></h5>
             </div>
 
             <div>
@@ -279,7 +250,7 @@
                 </ul>
             </div>
 
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-theme = "c" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li>
@@ -302,8 +273,8 @@
 
         <!--browseDate Function  -->
         <div data-role="page" id ="browseDate" data-add-back-btn="true">
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
+            <div data-role="header" data-theme = "c" data-position="fixed">
+                <h5><a href = "#main">iWill<img src="images/logo3.png" align = "right"/></a></h5>
             </div>
             <div>
                 <h3>Do the browse by date</h3>
@@ -312,7 +283,7 @@
                     <input type="date" name="date" id="date" value=""  />
                 </div>
             </div>
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-theme = "c" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li>
@@ -334,10 +305,10 @@
         <!-- End of Browse Date Needed up Function page -->
 
         <!--browseNewsList page start -->
-        <div data-role="page" id ="browseNewsList" data-add-back-btn="true">
+        <div data-role="page" id ="browseNewsList" data-theme = "c" data-add-back-btn="true">
 
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
+            <div data-role="header" data-theme = "c" data-position="fixed">
+                <h5><a href = "#main">iWill<img src="images/logo3.png" align = "right"/></a></h5>
             </div>
 
             <div>
@@ -377,7 +348,7 @@
                 </li>
             </ul>
 
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-theme = "c" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li>
@@ -400,24 +371,24 @@
 
         <!--About page start *************************** -->
         <div data-role="page" id ="about" data-add-back-btn="true">
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
+            <div data-role="header" data-theme = "c" data-position="fixed">
+                <h5><a href = "#main">iWill<img src="images/logo3.png" align = "right"/></a></h5>
             </div>
-            <div data-role="collapsible" data-theme="a" data-content-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset = "true">
+            <div data-role="collapsible" data-theme = "c" data-content-theme = "a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset = "true">
 
                 <h3>1 - About the author</h3>
                 <p>
                     Michael Usry was given his first computer, an Atari 800, by his mother when he was 12 years old.  Now, over 30 years later, he's finishing his childhood dream of becoming a programmer, ah Software Developer.
                 </p>
             </div>
-            <div data-role="collapsible" data-theme="a" data-content-theme="d" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset = "true">
+            <div data-role="collapsible" data-theme = "c" data-content-theme = "a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset = "true">
                 <h3>gh-pages</h3>
                 <ul data-role="listview" data-inset="true">
                     <li>
-                        <a href ="http://mbusry.github.com/gh-pages/gold/" rel="external">Gold Page</a>
+                        <a href ="http://mbusry.github.com/gh-pages/week4/gold/" rel="external">Gold Page</a>
                     </li>
                     <li>
-                        <a href ="http://mbusry.github.com/gh-pages/bronze" rel="external">Bronze Page</a>
+                        <a href ="http://mbusry.github.com/gh-pages/week4/bronze" rel="external">Bronze Page</a>
                     </li>
                     <li>
                         <a href = "#browseNewsList">News Stream</a>
@@ -425,7 +396,7 @@
 
                 </ul>
             </div>
-            <div data-role="footer" data-position="fixed">
+            <div data-role="footer" data-theme = "c" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
                         <li>
@@ -446,9 +417,9 @@
         </div>
         <!-- End of Browse NewsList up Function page -->
         <!--ADD page start *************************** -->
-        <div data-role="page" id ="add" data-add-back-btn="true">
-            <div data-role="header" data-position="fixed">
-                <h5><a href = "#main">iWill</a></h5>
+        <div data-role="page" id = "add" data-theme = "c" data-add-back-btn="true">
+            <div data-role="header" data-theme = "c" data-position="fixed">
+                <h5><a href = "#main">iWill<img src="images/logo3.png" align = "right"/></a></h5>
             </div>
             <form  action="" id="firstForm">
                 <legend>
@@ -503,13 +474,14 @@
                 </div>
 
                 <div data-role = "fieldcontain">
-                    <input type="submit" value="Save it." data-theme = "a" />
-                    <input type="reset" value="Clear it." data-theme = "c"/>
+                    <input type="submit" value="Save it." data-theme = "c" />
+                    <br/>
+                    <input type="reset" value="Clear it." data-theme = "a"/>
                 </div>
                 <!-- This is the error dialog for fields that are required -->
                 <a href = "#error" id = "errorID" data-rel = "dialog" data-transition = "pop">Testing errors</a>
 
-                <div data-role="footer" data-position="fixed">
+                <div data-role="footer" data-theme = "c" data-position="fixed">
                     <div data-role="navbar">
                         <ul>
                             <li>
@@ -532,7 +504,7 @@
         <!-- End of Add Function page -->
         <!--error page start *************************** -->
         <div data-role="dialog" id ="error">
-            <div data-role="header" data-position="fixed">
+            <div data-role="header" data-theme = "c" data-position="fixed">
                 <h5>Oops</h5>
             </div>
             <div data-role = "content">
